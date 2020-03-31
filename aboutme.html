@@ -6,7 +6,7 @@
 	<style>
 		h1 {
 			font-size: 40px;
-			color: blue;
+			color: black;
 			font-family: 'Permanent Marker';
 		}
 		.art1 {
@@ -19,6 +19,20 @@
 
 		p {
 			font-family:Arial, Helvetica, sans-serif;
+		}
+
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.paintings {
+			height: 450px;
+			border-right:solid;
+			border-left: solid;
+			border-color: black;
+			border-width: 20px;
 		}
 
 	</style>
@@ -41,10 +55,10 @@
 					nature and this has immensely helped my personal growth. 
 				</p>
 				<br />
-				<div id="paintings">
-				<img class="art1" src="images/art1.jpg" />
-				<img class="art2"src="images/art2.jpg" />
-				<img class ="art3"src="images/art3.jpg" />
+				<div class ="flex-container">
+				<img class="paintings" src="images/art1.jpg" />
+				<img class="paintings"src="images/art2.jpg" />
+				<img class ="paintings"src="images/art3.jpg" />
 				</div>
 			</div>
 	</body>
