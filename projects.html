@@ -28,32 +28,54 @@
 			flex-direction: row;
 		}
 
+		.navbar {
+			display: flex;
+			flex-direction:row;
+			justify-content: center;
+		}
+
+		
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding-left: 0px;
+		}
+
+		li a {
+			display: block;
+			border-right: solid;
+			border-width: 100px;
+			background-color: white;
+			border-color: transparent;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size: 40px;
+			opacity: 0.7;
+		}
+
 	</style>
 </head>
 	<body>
-			<div id="Projects">
-				<div id="Header">
-					<h1>My Projects</h1>
-					<div id="navbar">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							<li><a href="aboutme.html">About Me</a></li>
-							<li><a href="images/Resume-Neila-Toofuny.pdf">Resume</a></li>
-						</ul>
-					</div>
-					</div>
-				<p>Here are some graphics-related projects that I've worked on. A larger collection of software projects can be found on my <a href=" https://github.com/ntoofuny">Github</a>.</p>
-				<div class="flex-container">
+		<div id="Projects">
+			<ul class="navbar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="images/Resume-Neila-Toofuny.pdf">Resume</a></li>
+			</ul>
+			<div id="Header">
+				<h1>My Projects</h1>
+			</div>
+			<p>Here are some graphics-related projects that I've worked on. A larger collection of software projects can be found on my <a href=" https://github.com/ntoofuny">Github</a>.</p>
+			<div class="flex-container">
 				<div class="projgroup" id=" proj1">
 					<br />
 					<h4>OUR Ecovillage Promo Video </h4>
 					<p>I created this video with fellow intern Xavier Harel to inform the public about OUR Ecovillage, a sustainable farm I was staying at in the summer of 2018. </p>
 					<br />
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/Bu4m2VPu9Ho"></iframe>
-					<br/>
+					<br />
 				</div>
-				<div class ="projgroup" id="proj2">
+				<div class="projgroup" id="proj2">
 					<h4> Blokus Graphics Interface</h4>
 					<p>As part of a group project for my CMPE320 Software Development course at university, I was primarily responsible for the GUI of an online implementation of the board game Blokus. I have attached the mockup I created for the gameplay</p>
 					<img src="images/blokus.png" width=" 500" height=" 500">
@@ -68,7 +90,7 @@
 					<br />
 					<img src="images/squish_screenshot.png" width="500" height=" 400">
 				</div>
-				</div>
 			</div>
+		</div>
 </body>
 </html>
