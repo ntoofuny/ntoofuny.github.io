@@ -3,6 +3,8 @@
 <html>
 <head>
 	<title>My Projects</title>
+	<script src="app.js" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
 	<!-- style block for CSS-->
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<style>
@@ -24,17 +26,20 @@
 		}
 
 		.flex-container {
-			display: flex;
-			flex-direction: row;
+			display: grid;
+			grid-template-columns: 600px 600px 600px
 		}
 
 		.navbar {
 			display: flex;
-			flex-direction:row;
+			flex-direction: row;
 			justify-content: center;
 		}
 
-		
+		#proj4 {
+			background:black;
+		}
+
 		ul {
 			list-style-type: none;
 			margin: 0;
@@ -42,7 +47,6 @@
 		}
 
 		li a {
-			display: block;
 			border-right: solid;
 			border-width: 100px;
 			background-color: lightgray;
@@ -53,7 +57,6 @@
 			text-decoration: none;
 			color: black;
 		}
-
 	</style>
 </head>
 	<body>
@@ -91,6 +94,14 @@
 					</p>
 					<br />
 					<img src="images/squish_screenshot.png" width="500" height=" 400">
+				</div>
+				<div class="projgroup" id="proj4 sketch">
+					<h4>Pacman Game (in progress)</h4>
+					<p>
+						This is my current p5.js sketch.
+					</p>
+					<br />
+					<div id="sketch"></div>
 				</div>
 			</div>
 		</div>
