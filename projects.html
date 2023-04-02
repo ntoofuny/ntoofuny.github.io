@@ -8,6 +8,13 @@
 	<!-- style block for CSS-->
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<style>
+		body {
+			background-image: url(images/BC.jpg);
+			background-repeat: repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: 1500px;
+		}
 		.Projects{
 			background-color: black;
 		}
@@ -20,12 +27,12 @@
 		p, h4 {
 			font-family: Arial, Helvetica, sans-serif;
 		}
-
+		.opaque {
+			
+			border-radius: 10px;
+		}
 		.projgroup {
-			background-color: lightgrey;
-			border-style: solid;
-			border-color: lightgrey;
-			border-width: 20px;
+			background-color: rgb(143, 189, 229, 0.7);
 		}
 
 		.flex-container {
@@ -37,6 +44,8 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
+
+			border-radius: 30px;
 		}
 
 		#proj4 {
@@ -52,7 +61,6 @@
 		li a {
 			border-right: solid;
 			border-width: 100px;
-			background-color: lightgray;
 			border-color: transparent;
 			font-family: 'Permanent Marker';
 			font-size: 40px;
@@ -74,17 +82,21 @@
 				<h1>My Projects</h1>
 			</div>
 			<p>Here are some graphics-related projects that I've worked on. A larger collection of software projects can be found on my <a href=" https://github.com/ntoofuny">Github</a>.</p>
+			<div class="projgroup" id=" proj1">
+
 			<div class="flex-container">
-				<div class="projgroup" id=" proj1">
+				<div  id=" proj1">
 					<br />
+					<div class = "opaque">
 					<h4>OUR Ecovillage Promo Video </h4>
 					<p>I created this video with fellow intern Xavier Harel to inform the public about OUR Ecovillage, a sustainable farm I was staying at in the summer of 2018. </p>
+				</div>
 					<br />
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/Bu4m2VPu9Ho"></iframe>
 					<br />
 				</div>
 				<div>
-				<div class="projgroup" id="proj4 sketch">
+				<div  id="proj4 sketch">
 					<h4>Creative Animation _1</h4>
 					<p>
 						This is my current p5.js sketch.
@@ -92,7 +104,7 @@
 					<br />
 					<iframe width="625" height="450" src="https://editor.p5js.org/ntoofuny/full/R4yzxj1bS"></iframe>
 				</div>
-				<div class="projgroup" id="proj4 sketch">
+				<div  id="proj4 sketch">
 					<h4>Creative Animation 2</h4>
 					<p>
 						This is my current p5.js sketch
