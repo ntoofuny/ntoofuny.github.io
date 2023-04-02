@@ -48,6 +48,67 @@
 			justify-content: center;
 		}
 
+		.moving-van{
+			animation: fly 50s linear infinite;
+    top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
+
+#bird1{
+	animation: fly 100s linear infinite;
+	width: 100px;
+	height: 100px;
+}
+
+#bird2{
+	width: 300px;
+	height: 300px;
+}
+
+#bird3{animation: fly 25s linear infinite;
+	width: 500px;
+	height: 500px;
+}
+
+@keyframes fly {
+	0% {
+
+		transform: translate(-200%,110vh) rotateZ(0deg);
+	}
+
+	12.5% {
+		transform: translate(120vw,-120%) rotateZ(20deg);
+	}
+
+	25% {
+		transform: translate(-200%,50vh) scale(1.75) rotateZ(-20deg);
+	}
+
+	37.5% {
+		transform: translate(-200%,-120%) rotateZ(-40deg);
+	}
+
+	50% {
+		transform: translate(100vw,50vh) rotateZ(0deg);
+	}
+
+	62.5% {
+		transform: translate(20vw,100vh) rotateZ(20deg);
+	}
+	75% {
+		transform: translate(200%,100vh) rotateZ(20deg);
+	}
+	87.5% {
+		transform: translate(50vw,-200%) scale(1.75) rotateZ(20deg);
+	}
+
+	100% {
+	
+	}
+}
 	</style>
 </head>
 	
@@ -63,6 +124,13 @@
 		<h1> Welcome to Neila's Nook</h1>
 	</div>
 	<br />
+	<div class="wrapper">
+		<div class="moving-van" >
+		  <img id = "bird1" src="images/bird.png">
+		  <img id = "bird2" src="images/bird.png">
+		  <img id = "bird3" src="images/bird.png">
 
+		</div>
+	  </div>
 </body>
 </html>
