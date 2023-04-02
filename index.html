@@ -131,12 +131,12 @@
 }
 
 #ladybug1 {
-  animation: MoveUpDown 10s linear infinite;
+  animation: MoveRightLeft 20s linear infinite;
   position: absolute;
-  height: 150px;
-  width: 150px;
-  left: 200px;
-  bottom: 0;
+  height: 75px;
+  width: 75px;
+  right: 0px;
+  top: 150px;
 }
 
 #ladybug2 {
@@ -148,12 +148,12 @@
   bottom: 60px;
 }
 
-@keyframes MoveUpDown {
+@keyframes MoveRightLeft {
   0%, 100% {
-    bottom: 0;
+    right: 0;
   }
   50% {
-    bottom: 500px;
+    right: 1300px;
   }
 }
 
